@@ -1,0 +1,8 @@
+{
+  "name": "sca-service-test-ants-sca",
+  "version": "1.0.0",
+  "description": "SCA Test Service",
+  "scripts": {
+    "run": "run.sh"
+  }
+}
