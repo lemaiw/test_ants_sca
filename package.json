@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "SCA Test Service",
   "scripts": {
-    "run": "run.sh"
+    "start" : "start.sh"
+    "status": "status.sh"
+    "stop"  : "stop.sh"
   }
 }
