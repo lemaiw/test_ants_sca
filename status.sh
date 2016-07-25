@@ -21,8 +21,6 @@ if [ -f jobid ]; then
     jobstate=`qstat -f $jobid | grep job_state | cut -b17`
     if [ $jobstate == "Q" ]; then
         echo "Waiting in the queue"
-        eststart=`showstart $jobid | grep start`
-        curl -s -X POST -H "Content-Type: application/json" -d "{\"msg\":\"Waiting in the PBS queue : $eststart\"}" $SCA_PROGRESS_URL
         exit 0 #running!
     fi
     if [ $jobstate == "R" ]; then
