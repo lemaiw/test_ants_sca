@@ -5,7 +5,7 @@
 #clean up previous job (just in case)
 rm -f finished
 
-jobid=`qsub ants_template.pbs`
+jobid=`qsub $SCA_SERVICE_DIR/ants_template.pbs`
 echo $jobid > jobid
 
 echo "[]" > products.json
